@@ -1,23 +1,22 @@
-````md
 # Student Performance Prediction & Visualization System
 
-An interactive academic analytics and student performance prediction system built using FastAPI, Machine Learning, SQLite, and Python visualization tools.
+An interactive academic analytics and student performance prediction system developed using FastAPI, Machine Learning, SQLite, and Python visualization libraries.
 
-The system helps administrators and faculty analyze academic performance across departments, semesters, subjects, attendance patterns, and GPA trends while also identifying at-risk students using predictive analytics.
+The system enables faculty and administrators to analyze academic performance across departments, semesters, subjects, attendance patterns, and GPA trends while identifying at-risk students using predictive analytics.
 
 ---
 
 # Project Objectives
 
-The primary objective of this project is to design and develop an interactive student performance analysis and visualization system that provides meaningful academic insights through data analytics and machine learning.
+The primary objective of this project is to design and develop an interactive academic analytics platform that provides meaningful insights using data analysis and machine learning techniques.
 
-The system aims to:
+The system is designed to:
 
 - Analyze student academic performance across departments and semesters
 - Identify at-risk students using predictive models
-- Visualize trends using interactive dashboards and charts
-- Provide subject-wise and attendance-based analytics
-- Support data-driven academic decision making for faculty and administrators
+- Visualize academic trends through dashboards and charts
+- Provide attendance and subject-wise performance analytics
+- Support data-driven academic decision making
 
 ---
 
@@ -29,16 +28,22 @@ The system aims to:
 - GPA monitoring
 - Subject-wise marks analysis
 - Department and semester filtering
+- Performance trend visualization
 
 ## Machine Learning Prediction
 - At-risk student prediction
-- Classification based academic risk analysis
+- Academic risk classification
 - Predictive insights using Random Forest Classifier
+- Performance category prediction:
+  - Low Risk
+  - Medium Risk
+  - High Risk
 
 ## Backend APIs
-- REST APIs using FastAPI
+- RESTful APIs using FastAPI
 - Swagger API documentation
-- JSON request/response handling
+- JSON request and response handling
+- Modular backend architecture
 
 ## Database Integration
 - SQLite relational database
@@ -46,9 +51,9 @@ The system aims to:
 - ORM support using SQLAlchemy
 
 ## Interactive Visualization
-- Trend analysis
-- GPA distributions
-- Attendance-performance correlations
+- Trend analysis dashboards
+- GPA distribution charts
+- Attendance vs performance correlation
 - Subject-wise performance insights
 
 ---
@@ -59,14 +64,11 @@ The system aims to:
 |---|---|
 | Python | Core programming language |
 | FastAPI | Backend API framework |
-| SQLite | Database |
-| SQLAlchemy | ORM |
+| SQLite | Database management |
+| SQLAlchemy | ORM and database interaction |
 | Pandas | Data preprocessing |
-| Scikit-learn | Machine Learning |
-| NumPy | Numerical operations |
-| Joblib | Model serialization |
-| Swagger UI | API testing/documentation |
-| Plotly / Dashboard Tools | Visualization |
+| Scikit-learn | Machine learning |
+| Plotly | Interactive data visualization |
 
 ---
 
@@ -74,22 +76,26 @@ The system aims to:
 
 ```text
 Frontend / Dashboard
-        ↓
+        │
+        ▼
 FastAPI Backend APIs
-        ↓
+        │
+        ▼
 SQLite Database
-        ↓
+        │
+        ▼
 Machine Learning Model
-        ↓
-Prediction & Analytics
-````
+        │
+        ▼
+Prediction & Analytics Engine
+```
 
 ---
 
 # Project Structure
 
 ```text
-student-performance-system
+student-performance-system/
 │
 ├── assets/
 │   └── screenshots/
@@ -104,6 +110,7 @@ student-performance-system
 │
 ├── dashboard/
 ├── data/
+│
 ├── docs/
 │   ├── api.md
 │   ├── architecture.md
@@ -116,6 +123,7 @@ student-performance-system
 │
 ├── notebooks/
 ├── utils/
+│
 ├── README.md
 └── requirements.txt
 ```
@@ -127,30 +135,27 @@ student-performance-system
 ## Data Collection
 
 Academic datasets containing:
-
-* Attendance
-* Marks
-* GPA
-* Student performance metrics
+- Attendance
+- Marks
+- GPA
+- Student performance metrics
 
 ## Data Preprocessing
 
 Performed using:
-
-* Pandas
-* NumPy
+- Pandas
+- NumPy
 
 ## Model Training
 
 Algorithm used:
-
-* Random Forest Classifier
+- Random Forest Classifier
 
 ## Prediction Labels
 
-* Low Risk
-* Medium Risk
-* High Risk
+- Low Risk
+- Medium Risk
+- High Risk
 
 ---
 
@@ -160,8 +165,8 @@ Algorithm used:
 
 ```http
 GET /
-```
 
+```
 ### Response
 
 ```json
@@ -302,5 +307,3 @@ UNIVERSITY ID : O24MCA112135
 
 This project is developed for educational and academic purposes.
 
-```
-```
